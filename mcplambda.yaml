@@ -1,0 +1,10 @@
+# Minimal hello-world MCP server configuration
+# Build strategy is auto-detected as "pip" from requirements.txt
+run: "python server.py"
+
+tools:
+  - "hello"
+  - "echo"
+
+env_vars:
+  LOG_LEVEL: "INFO"
