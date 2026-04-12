@@ -8,4 +8,3 @@ tools:
 
 env_vars:
   LOG_LEVEL: "INFO"
-  PORT: 8000
