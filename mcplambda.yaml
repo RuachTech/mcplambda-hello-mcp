@@ -7,8 +7,7 @@ run: "python server.py"
 transport: "streamable-http"
 
 tools:
-  - "hello"
-  - "echo"
+  - "echo_tool"
 
 env_vars:
   LOG_LEVEL: "INFO"
