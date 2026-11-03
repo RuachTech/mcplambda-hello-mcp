@@ -33,7 +33,7 @@ MCPLambda auto-detects the build strategy:
 2. No `uv.lock` / `poetry.lock` → skip
 3. `requirements.txt` found → **strategy: `pip`**
 
-The server runs on port 8080 (configurable via `PORT` env var).
+The server speaks MCP over streamable HTTP at `/mcp` (declared as `transport: "streamable-http"` in `mcplambda.yaml`). It listens on `$PORT`, which the platform sets to the deployment's port.
 
 ## Testing Other Strategies
 

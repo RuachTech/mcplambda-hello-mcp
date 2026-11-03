@@ -2,6 +2,10 @@
 # Build strategy is auto-detected as "pip" from requirements.txt
 run: "python server.py"
 
+# server.py serves MCP over streamable HTTP (mcp.run(transport="http")).
+# Without this the platform assumes stdio and the deployment never answers.
+transport: "streamable-http"
+
 tools:
   - "hello"
   - "echo"
